@@ -1,14 +1,10 @@
-# Data Science with Python and R
+# Estatística para Data Science
 ---
+## Estudos com Python e R
+Baseado no livro **Practical statistics for data scientists** de Bruce, Bruce e Gedeck (2020). 
 
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/igoandrade/ds-template)
+O repositório contendo os códigos desenvolvidos pelos autores e os conjuntos de dados pode ser acessado nesse link: [https://github.com/gedeck/practical-statistics-for-data-scientists](https://github.com/gedeck/practical-statistics-for-data-scientists).
 
-A Data Science example running in Gitpod.
+## Referências
 
-This repository contains the main [Python](https://www.python.org/) and [R](https://www.r-project.org/) libraries for data science and financial data analysis.
-
-## Try it!
-
-Try it in the browser!
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/igoandrade/ds-template)
+BRUCE, Peter; BRUCE, Andrew; GEDECK, Peter. **Practical statistics for data scientists**: 50+ essential concepts using R and Python. O'Reilly Media, 2020.
