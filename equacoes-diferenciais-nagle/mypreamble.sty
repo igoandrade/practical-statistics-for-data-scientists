@@ -1,0 +1,257 @@
+% ---
+% Pacotes básicos 
+% ---
+\usepackage[left=3cm,right=2cm,top=3cm,bottom=2cm]{geometry}            % configura layout de página
+\usepackage{lmodern}			                                        % Usa a fonte Latin Modern			
+\usepackage[T1]{fontenc}		                                        % Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		                                        % Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}		                                        % Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				                                        % Controle das cores
+\usepackage{graphicx}			                                        % Inclusão de gráficos
+\usepackage{microtype} 			                                        % para melhorias de justificação
+\usepackage{pslatex}                                                    % torna o documento padrão para as fontes Times/Helvetica/Courier
+\usepackage{url}
+\usepackage{breakurl}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{subfig}
+\usepackage{pdfpages}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{newfloat}
+\usepackage[font=singlespacing]{caption}
+\usepackage{amsmath, amssymb, amsthm, amsfonts}
+\usepackage{setspace}
+\usepackage{chngcntr}
+\usepackage{comment}
+\usepackage{copyrightbox}
+\usepackage{parskip}
+\usepackage{enumitem}
+
+\setlist[enumerate]{wide=0pt, widest=99,leftmargin=.7cm, labelsep=*}
+% ---
+
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}				% para geração de dummy text
+% ---
+
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[alf,abnt-etal-text=it,abnt-repeated-author-omit=yes,abnt-etal-list=0,abnt-etal-cite=3,abnt-emphasize=bf]{abntex2cite}	% Citações padrão ABNT
+
+
+
+% --- 
+% CONFIGURAÇÕES DE PACOTES
+% --- 
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{}%
+% ---
+
+
+% ---
+% Customizações de Fontes e Tamanhos de Letras
+% ---
+\renewcommand{\chaptitlefont}{\ABNTEXchapterfont\ABNTEXchapterfontsize}
+
+\setsecheadstyle{\ABNTEXsectionfont\ABNTEXsectionfontsize\ABNTEXsectionupperifneeded}
+
+
+\renewcommand{\ABNTEXchapterfont}{\rmfamily}
+\renewcommand{\ABNTEXchapterfontsize}{\normalsize\bfseries}
+
+\renewcommand{\ABNTEXpartfont}{\ABNTEXchapterfont}
+\renewcommand{\ABNTEXpartfontsize}{\ABNTEXchapterfontsize}
+
+\renewcommand{\ABNTEXsectionfont}{\ABNTEXchapterfont}
+\renewcommand{\ABNTEXsectionfontsize}{\normalsize\bfseries}
+
+\renewcommand{\ABNTEXsubsectionfont}{\ABNTEXsectionfont}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
+
+\renewcommand{\ABNTEXsubsubsectionfont}{\ABNTEXsubsectionfont}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
+
+\renewcommand{\ABNTEXsubsubsubsectionfont}{\ABNTEXsubsectionfont}
+\renewcommand{\ABNTEXsubsubsubsectionfontsize}{\normalsize}
+
+
+\counterwithout{equation}{chapter} % define uma numeração contínua (1,2,3, ...) de equações. Para uma numeração com dependência do número do capítulo (1.1, 1.2, ...), basta apagar esta linha.
+
+\setlength{\ABNTEXsignwidth}{10cm} % define o comprimento da linha de assinatura na folha de aprovação
+
+\setlength{\ABNTEXsignthickness}{0.5pt} % define a espessura da linha de assinatura na folha de aprovação
+
+
+% ---
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{projeto de pesquisa}, 
+		colorlinks=true,       		% false: boxed links; true: colored links
+    	linkcolor=black,          	% color of internal links
+    	citecolor=black,        		% color of links to bibliography
+    	filecolor=black,      		% color of file links
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+
+\makeatletter
+\renewcommand{\CRB@setcopyrightfont}{%
+\footnotesize
+\color{black}
+\rm
+}
+\makeatother
+
+
+% ---
+% compila o índice
+% ---
+\makeindex
+% ---
+
+% ---
+% Customização do Sumário (Distância entre número e nome do item)
+% ---
+\setlength{\cftlastnumwidth}{3em}
+\cftsetindents{part}{0em}{\cftlastnumwidth}
+\cftsetindents{chapter}{0em}{\cftlastnumwidth}
+\cftsetindents{section}{0em}{\cftlastnumwidth}
+\cftsetindents{subsection}{0em}{\cftlastnumwidth}
+\cftsetindents{subsubsection}{0em}{\cftlastnumwidth}
+\cftsetindents{paragraph}{0em}{\cftlastnumwidth}
+\cftsetindents{subparagraph}{0em}{\cftlastnumwidth}
+
+\setlength{\cftbeforechapterskip}{0pt} % Altera o espaçamento entre itens do sumário
+% ---
+
+% ---
+% Posiciona figuras e tabelas no topo da página quando adicionadas sozinhas
+% em um página em branco. Ver https://github.com/abntex/abntex2/issues/170
+\makeatletter
+\setlength{\@fptop}{5pt} % Set distance from top of page to first float
+\makeatother
+% ---
+
+% Remove o espaço "por capitulo" dos itens da lista de figuras
+\newcommand*{\noaddvspace}{\renewcommand*{\addvspace}[1]{}}
+\addtocontents{lof}{\protect\noaddvspace}
+
+
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.25cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0pt}  % tente também \onelineskip
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% ---
+\titulo{\uppercase{Estatística}\\(Murray R. Spiegel)}
+
+\autor{IGO DA COSTA ANDRADE}
+
+\local{PALMAS - TO}
+
+\data{2022}
+
+\orientador{Carlos Antonio Gonçalves de Aguiar}
+%\coorientador{Prof. Dr. ``Nome do Co-Orientador''}
+
+\instituicao{%
+  \textbf{UNIVERSIDADE FEDERAL DO TOCANTINS}}
+
+\tipotrabalho{Dissertação (Mestrado)}
+
+% O preambulo deve conter o tipo do trabalho, o objetivo, 
+% o nome da instituição e a área de concentração 
+\preambulo{Relatório de Estágio Obrigatório apresentado como pré-requisito para a nota da disciplina Estágio II do curso de Ciências Contábeis da Fundação Universidade Federal do Tocantins, sob a orientação do Prof. Msc. \imprimirorientador.}
+% ---
+
+%------------------------Capa---------------------------%
+\renewcommand{\imprimircapa}{
+\begin{capa}
+    \begin{center}
+    	\includegraphics[scale=0.12]{figures/brasao.png}\\
+ 		{\textbf{UNIVERSIDADE FEDERAL DO TOCANTINS}}\\
+ 		{\textbf{CÂMPUS UNIVERSITÁRIO DE PALMAS}}\\
+ 		{\textbf{CURSO DE GRADUAÇÃO EM CIÊNCIAS CONTÁBEIS}}\\[3 cm]
+		{\textbf{\imprimirautor}}\\
+        [3 cm]
+        {\textbf{\imprimirtitulo}}\\
+        \vfill
+        {\textbf{\imprimirlocal}}\\
+        {\textbf{\imprimirdata}}
+    \end{center}
+\end{capa}
+}
+
+%--------------------Folha de Rosto---------------------%
+\renewcommand{\imprimirfolhaderosto}{
+\begin{folhaderosto}
+    \vspace*{2cm}
+    \begin{center}
+     	%{\large \imprimirautor}\\[4 cm]
+     	{\textbf{\imprimirtitulo}} \\
+        [2 cm]
+     \end{center}
+     \hspace{.45\textwidth}
+        \begin{minipage}{.5\textwidth}
+			\SingleSpacing
+			\imprimirpreambulo
+		\end{minipage}\\[2 cm]
+		
+		\centering EXAMINADOR 
+		\vspace{1cm}
+		\assinatura{\imprimirorientador \\ Universidade Federal do Tocantins \\ Examinador}
+	\begin{center}
+
+        \vfill
+        {\imprimirlocal} \\
+        {\imprimirdata}
+    \end{center}
+\end{folhaderosto}
+}
+
+% ---
+% Customizações diversas
+\newcommand{\ORG}{ORG Contabilidade \& Gestão Empresarial}
+% ---

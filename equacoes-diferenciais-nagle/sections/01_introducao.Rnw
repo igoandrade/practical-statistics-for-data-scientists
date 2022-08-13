@@ -1,0 +1,14 @@
+\chapter{Introdução}
+\vspace{-.8cm}
+
+O presente relatório de estágio tem como objetivo apresentar o registro das atividades desenvolvidas durante o  Estágio Curricular Supervisionado, constituindo pré-requisito para aprovação na disciplina Estágio I do curso de Ciências Contábeis da Fundação Universidade Federal do Tocantins (UFT).
+
+O estágio curricular supervisionado no curso de Ciências Contábeis da UFT é uma etapa da formação do futuro profissional de Contabilidade. Segundo \citeonline{alcantara2021percepccao}, nesse momento de contato com o mercado de trabalho, o estudante pode aplicar o que foi aprendido em sala de aula com a vantagem do recebimento de orientação tanto do professor da disciplina de estágio quanto do profissional da empresa que recebe o estagiário.
+
+O estágio  está previsto na a Lei nº 11.788, de 25 de Setembro de 2008 (Lei do Estágio), segundo a qual trata-se de uma preparação para o trabalho produtivo sob o acompanhamento da instituição de educação superior, profissional ou de ensino médio \cite{lei11788estagio}. No âmbito dos cursos de graduação em Ciências Contábeis, o estágio é regido pelas Diretrizes Curriculares Nacionais (DCN), em especial a Resolução CNE/CES nº 10/2004 que instituiu as Diretrizes Curriculares
+Nacionais para o Curso de Graduação em Ciências Contábeis, bacharelado, e dá outras
+providências \cite{resolucao10}. Essa resolução, além de estabelecer as regras que devem estar previstas no projeto pedagógico dos cursos de ciências contábeis, afirma que o estágio deve permitir ao estudante obter consciência de seu perfil profissional e perceber eventuais necessidades de adequação de sua aprendizagem.
+
+As atividades de estágio foram realizadas no setor de contabilidade da empresa \ORG~  no período de 01 de abril de 2022 a 02 de maio de 2022, totalizando 120 horas, conforme exigência do Projeto Pedagógico do Curso (PPC) de Ciências Contábeis da Universidade Federal do Tocantins \cite{ppc_cienciascontabeis}. Foram desenvolvidas tarefas de organização e classificação contábil de documentos das empresas clientes do escritório; geração de lançamentos contábeis; realização da conciliação de contas bancárias e arquivamentos de documentos, em conformidade com o plano de atividades constante no Termo de Compromisso de Estágio Obrigatório firmado entre o estagiário, a instituição de ensino e a unidade concedente.
+
+A estrutura do relatório é a que segue: No segundo capítulo, é apresentada a fundamentação teórica acerca dos conceitos de Contabilidade aplicados durante as atividades de estágio. No terceiro capítulo, é apresentada uma caracterização da empresa concedente \ORG. No quarto capítulo, faz-se um diagnóstico da empresa concedente  e do sistema de contabilidade por ela utilizado. O quinto capítulo trata da descrição das atividades desenvolvidas durante o estágio. No sexto capítulo, são apresentadas as considerações finais do trabalho.
